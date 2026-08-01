@@ -10,7 +10,7 @@ class Event extends Model
         'title', 'description', 'venue', 'city', 'event_date', 'poster_image', 'status'
     ];
 
-    public function ticketType() {
+    public function ticketTypes() {
         return $this->hasMany(TicketType::class);
     }
 
